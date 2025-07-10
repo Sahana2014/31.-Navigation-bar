@@ -22,3 +22,58 @@ body {
     background-color:yellowgreen;
     color:darkcyan;
 }
+.pimg1,.pimg2,.pimg3 {
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+.pimg1{
+    background-image:url("Coder #.jpg");
+    min-height:100%;
+}
+.pimg2 {
+    background-image: url("Coder ^.png");
+    min-height: 400%;
+}
+.pimg3 {
+    background-image: url("Coder &.jpg");
+    min-height: 400%;
+}
+.section{
+    text-align:center;
+    padding:50px 80px;
+}
+.section-light{
+    background-color:lightpink;
+    color:rgb(255, 0, 98);
+}
+.section-dark {
+    background-color: hotpink;
+    color: rgb(255, 255, 255);
+}
+.ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:black;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+.ptext.border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+}
+.ptext.border.trans{
+    background-color:transparent;
+}
+@media(max-width:568px){
+    .pimg1,.pimg2,.pimg3{
+        background-attachment:scroll;
+    }
+}
